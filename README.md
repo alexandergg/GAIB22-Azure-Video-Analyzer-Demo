@@ -8,7 +8,7 @@ products:
 description: "The samples in this repo show how to use the Azure Video Analyzer that enables you to capture, record, and analyze videos using AI."  
 ---
 
-# Global AI Bootcaml 2022 - Azure Video Analyzer Demo
+# Global AI Bootcamp 2022 - Azure Video Analyzer Demo
 
 This repo provides Python samples for Azure Video Analyzer
 
