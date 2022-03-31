@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<body>
+    <script>
+        function onAVALoad() {
+        const avaPlayer = document.querySelector("ava-player");
+
+        avaPlayer.configure({
+            token: '',
+            clientApiEndpointUrl: 'https://.api.westeurope.videoanalyzer.azure.net',
+            videoName: ''
+        });
+        avaPlayer.load();
+        }
+    </script>
+    <script type="module"
+        async
+        src="https://unpkg.com/@azure/video-analyzer-widgets"
+        onload="onAVALoad()"></script>
+    <h1>Example Player widget</h1>
+    <div id="container"
+        class="widget-container">
+        <ava-player></ava-player>
+    </div>
+</body>

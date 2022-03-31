@@ -1,0 +1,19 @@
+name: ava-edge-topology-deploy
+channels:
+  - defaults
+dependencies:
+  - pip=21.2.2
+  - python=3.8.12
+  - pip:
+    - certifi==2021.10.8
+    - azure-iot-hub==2.6.0
+
+
+
+
+
+
+
+
+
+

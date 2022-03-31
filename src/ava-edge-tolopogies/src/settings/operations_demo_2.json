@@ -1,0 +1,115 @@
+{
+    "apiVersion": "1.1",
+    "operations": [
+        {
+            "opName": "pipelineTopologyList",
+            "opParams": {}
+        },
+        {
+            "opName": "WaitForInput",
+            "opParams": {
+                "message": "Press Enter to continue"
+            }
+        },
+        {
+            "opName": "livePipelineList",
+            "opParams": {}
+        },
+        {
+            "opName": "WaitForInput",
+            "opParams": {
+                "message": "Press Enter to continue"
+            }
+        },
+        {
+            "opName": "pipelineTopologySet",
+            "opParams": {
+                "pipelineTopologyFile": "./topologies/topology_with_inference_recording_demo_2.json"
+            }
+        },
+        {
+            "opName": "livePipelineSet",
+            "opParams": {
+                "name": "Sample-Pipeline-2",
+                "properties": {
+                    "topologyName": "DemoObjectTracking2",
+                    "description": "Demo 2. Self-Driving Object Tracking - AI Composition Architecture",
+                    "parameters": [
+                        {
+                            "name": "rtspUrl",
+                            "value": "rtsp://rtspsim_live_2:554/media/camera-400s.mkv"
+                        },
+                        {
+                            "name": "rtspUserName",
+                            "value": "testuser"
+                        },
+                        {
+                            "name": "rtspPassword",
+                            "value": "testpassword"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "opName": "livePipelineActivate",
+            "opParams": {
+                "name": "Sample-Pipeline-2"
+            }
+        },
+        {
+            "opName": "livePipelineList",
+            "opParams": {}
+        },
+        {
+            "opName": "WaitForInput",
+            "opParams": {
+                "message": "The livePipeline has been activated. Press Enter to continue and deactivate the livePipeline."
+            }
+        },
+        {
+            "opName": "livePipelineDeactivate",
+            "opParams": {
+                "name": "Sample-Pipeline-2"
+            }
+        },
+        {
+            "opName": "livePipelineDelete",
+            "opParams": {
+                "name": "Sample-Pipeline-2"
+            }
+        },
+        {
+            "opName": "livePipelineList",
+            "opParams": {}
+        },
+        {
+            "opName": "WaitForInput",
+            "opParams": {
+                "message": "Press Enter to continue"
+            }
+        },
+        {
+            "opName": "pipelineTopologyDelete",
+            "opParams": {
+                "name": "DemoObjectTracking2"
+            }
+        },
+        {
+            "opName": "WaitForInput",
+            "opParams": {
+                "message": "Press Enter to continue"
+            }
+        },
+        {
+            "opName": "pipelineTopologyList",
+            "opParams": {}
+        },
+        {
+            "opName": "WaitForInput",
+            "opParams": {
+                "message": "Press Enter to continue"
+            }
+        }
+    ]
+}
