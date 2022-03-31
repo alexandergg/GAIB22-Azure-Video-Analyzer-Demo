@@ -1,1 +1,1 @@
-# GlobalAIBootcamp2022-AzureVideoAnalyzerDemo
+# Global AI Bootcamp 2022 - Azure Video Analyzer Demo
